@@ -26,7 +26,8 @@ class Comp extends React.Component{
                 
               </div>
             </div>
-            <button class="ui button" type="submit">Submit</button>
+            <button class="ui primary button" type="submit">Submit</button>
+            <br></br>
             <button class="ui button" type="submit">Ok</button>
           </div>
           
