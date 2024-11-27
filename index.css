@@ -1,0 +1,9 @@
+.Box
+{
+    margin: 100;
+    border: 1px solid #2c0101;
+    width: 300px;
+    padding: 20px;
+    background-color: chocolate;
+
+}

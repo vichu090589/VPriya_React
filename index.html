@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="index.css" rel="stylesheet">
+    <title>React</title>
+</head>
+<body id="idBody">
+    <!----With out javascript with controls-->
+   <!-- <div id="ids" class="Box">
+        <label>Hello World!</label>
+    </div>-->
+     <!----With  javascript creating changes in JS-->
+     
+     <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+     <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!--functions-->
+<script type="text/babel">
+    const Header=()=> <span> Home  | ABOUT  |  CONTACT</span>
+    const Footer=()=> <span>Copy right 2024!</span>
+    const Home = () => {
+        return
+        {
+            <div>
+                <h3>Hompage </h3>
+                <p>This is a Home page</p>
+                </div>
+        }
+    }
+    const Page=()=>{
+        return
+        {
+            <div>
+                <Header/>
+                <Footer/>
+                <Home/>
+
+                </div>
+        }
+    }
+    const root=ReactDOM.createRoot(document.getElementById("idBody"))
+    root.render(<Page/>)
+</script>
+
+<!--<script type="text/babel">
+    const div=<div className="Box">Hello World!</div>
+    // components creation
+    const Comp=(
+        <>
+        <div className="Box">BYE</div>
+        <div className="Box">BYE BYE!</div>
+        </>
+    )
+    const root=ReactDOM.createRoot(document.getElementById("idBody"))
+    root.render(Comp)
+</script>-->
+  <script type="text/javascript">
+    //react
+  //  const div=React.createElement('div',{children:'Hello World!',className:'Box'})
+   // const root=ReactDOM.createRoot(document.getElementById("idBody"))
+   // root.render(div)
+   // normal
+   // const body=document.getElementById("idBody")
+   // const div=document.createElement("div")
+    //div.classList.add('Box')
+   
+   // div.textContent="Hello World!"
+    //body.appendChild(div)
+   // console.log(div)
+  </script>
+</body>
+</html>
